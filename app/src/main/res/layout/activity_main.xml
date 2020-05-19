@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--
+    ATRIBUINDO AO ELEMENTO FRAGMENT O LAYOUT QUE SERÁ UTILIZADO
+    DE UMA FORMA ESTÁTICA
+
+    TÉCNICAMENTE NÃO É UMA BOA IDEIA DECLARAR UMA FRAGMENT ESTÁTICA
+    ENTÃO FAZEMOS VIA ACTIVITY, E NECESSITO TER UM VIEWHOLDER PARA ANEXAR A FRAGMENT
+    -->
+    <!--<fragment
+        class="com.example.fragments.FirstFragment"
+        android:id="@+id/first_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_first"
+        android:layout_weight="1"
+        />-->
+
+    <FrameLayout
+        android:id="@+id/first_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <fragment
+        class="com.example.fragments.secondFragment"
+        android:id="@+id/second_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_second"
+        android:layout_weight="1"
+        />
+</LinearLayout>
