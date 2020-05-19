@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         // PASSAR INFO PARA UMA FRAGMENT
         // firstFragment.setArguments();
 
-        //PEGO O SUPORT FRAGMENT MANAGAR, JÁ É AUTOMATICO
+        //PEGO O SUPORT FRAGMENT MANAGER, JÁ É AUTOMATICO O MÉTODO
         fragmentManager = getSupportFragmentManager();
         //INICIO A TRANSAÇÃO DA FRAGMENT ATRAVÉS DO METODO BEGINTRANSACTION
         fragmentTransaction = fragmentManager.beginTransaction();
